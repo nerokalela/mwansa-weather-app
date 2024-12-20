@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chipata Consisutuency</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eNno
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Chipata Forum</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="portfolio-details.html">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Elegant and creative solutions</h1>
+          <h2>We are team of talented community making changes to our country</h2>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+      <style>
+          .navbar {
+      background-color: #2c3e50;
+      padding: 15px;
+      text-align: center;
+  }
+  
+  .navbar h1 {
+      color: #fff;
+      margin: 0;
+      display: inline;
+  }
+  
+  .navbar a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+      color: #FFD700;
+  }
+  
+  /* Main Container */
+  /* Main Container */
+  .container {
+      max-width: 2000px; /* Increased width */
+      margin: 20px auto;
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+      transform: scale(1.03);
+  }
+  
+  /* 5-Day Forecast */
+  #forecast {
+      display: flex;
+      justify-content: space-around; /* Spread the items */
+      flex-wrap: wrap;
+      margin-top: 20px;
+  }
+  
+  
+  h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+      width: calc(100% - 24px);
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #007BFF;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+      border-color: #0056b3;
+      outline: none;
+  }
+  
+  button {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin: 10px 5px;
+  }
+  
+  button:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Weather Information */
+  .weather-info {
+      margin-top: 20px;
+  }
+  
+  .weather-info img {
+      width: 100px;
+      margin: 10px 0;
+  }
+  
+  .weather-info h3, .weather-info p {
+      margin: 10px 0;
+  }
+  
+  #localTime {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 16px;
+  }
+      </style>
+        
+  
+    
+      
+      <div>
+          <div class="navbar">
+              <h1>Weather Forecast</h1>
+              <a href="https://www.icuzambia.com/" target="_blank">ICU Zambia</a>
+              <a href="https://www.zrdc.org.zm/" target="_blank">ZRDC</a>
+              <a href="https://openweathermap.org/" target="_blank">Weather Links</a>
+          </div>
+          
+          <div class="container">
+              <h2 style="margin-bottom: 20px;">Weather Information</h2>
+              <input type="text" id="locationInput" placeholder="Enter a city" autocomplete="off">
+              <div id="suggestions" class="autocomplete-suggestions"></div>
+              <button id="searchButton">Search</button>
+              <button id="currentLocationButton">Use Current Location</button>
+              <div class="weather-info">
+                  <img id="weatherIcon" src="./Advanced Weather App_files/04n@2x.png" alt="Weather Icon" style="display: block;">
+                  <h3 id="location">Chilabombwe</h3>
+                  <p id="temperature">20°C</p>
+                  <p id="description">overcast clouds</p>
+                  <p id="localTime">Local time: undefined</p>
+              </div>
+              <script>
+                  const apiKey = '7cdd55fa86d50c0bd4717bb84c9dcf36';
+                  const city = 'Lusaka';
+                  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+                  
+                  function updateBackgroundColor(temp) {
+                    const widget = document.getElementById('weather-widget');
+                    if (temp >= 30) {
+                      widget.style.backgroundColor = '#ffccbc'; // Hot (orange)
+                    } else if (temp >= 20) {
+                      widget.style.backgroundColor = '#ffe082'; // Warm (yellow)
+                    } else {
+                      widget.style.backgroundColor = '#b3e5fc'; // Cold (blue)
+                    }
+                  }
+              
+                  function updateWeather(data) {
+                    const temperature = data.main.temp;
+                    const description = data.weather[0].description;
+                    const icon = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+                    const humidity = data.main.humidity;
+                    const windSpeed = data.wind.speed;
+                    const pressure = data.main.pressure;
+              
+                    document.getElementById('temperature').innerText = `${temperature}°C`;
+                    document.getElementById('description').innerText = description.charAt(0).toUpperCase() + description.slice(1);
+                    document.getElementById('icon').src = icon;
+                    document.getElementById('humidity').innerText = `${humidity}%`;
+                    document.getElementById('wind-speed').innerText = `${windSpeed} m/s`;
+                    document.getElementById('pressure').innerText = `${pressure} hPa`;
+              
+                    updateBackgroundColor(temperature);
+              
+                    // Update date
+                    const date = new Date();
+                    document.getElementById('date').innerText = date.toDateString();
+                  }
+              
+                  fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => updateWeather(data))
+                    .catch(error => {
+                      console.error('Error fetching weather data:', error);
+                      document.getElementById('description').innerText = 'Unable to load data.';
+                    });
+                </script>
+      </div>
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-award"></i></div>
+              <h4 class="title"><a href="">Recognizing Excellence in Civic Engagement</a></h4>
+              <p class="description">Chipata Citizen Engagement Forum is an exceptional platform for celebrating and acknowledging outstanding contributions to civic engagement and community involvement.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Empowering Citizens Through Action</a></h4>
+              <p class="description">The Chipata Citizen Engagement Forum is dedicated to empowering citizens with a clear roadmap for involvement, ensuring that every task is checked off and every objective is achieved.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-clipboard-data"></i></div>
+              <h4 class="title"><a href="">Data-Driven Insights for Informed Decision-Making</a></h4>
+              <p class="description">With the Chipata Citizen Engagement Forum, you gain access to valuable data and insights, allowing you to make informed decisions that can drive positive change within your community.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Chipata Citizen Engagement Forum</h3>
+            <p class="fst-italic">
+              We are dedicated to fostering positive change, empowering communities, and facilitating meaningful connections. Our mission is to make a difference in the world by connecting people and ideas. Here's what sets us apart:
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i>Community-Centric Approach: We focus on strengthening communities by connecting individuals and organizations, fostering lasting bonds and positive change.</li>
+              <li><i class="bi bi-check-circle"></i>Innovation for Impact: We harness cutting-edge technology and data-driven insights to provide you with the tools and resources necessary to make a significant impact on your community.</li>
+              <li><i class="bi bi-check-circle"></i>Your Voice Matters: We believe in the importance of every voice, offering a platform where your ideas, passions, and actions can be heard and amplified, contributing to a brighter future.</li>
+            </ul>
+            <p>
+              Join us on this journey towards a better, more connected world. Together, we can create a brighter future
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Members</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Services</h2>
+          <p>Community Services</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-award"></i></div>
+              <h4><a href="">Recognition & Awards Program</a></h4>
+              <p>Participate in our awards program, where we celebrate outstanding contributions to civic engagement, and recognize the dedication and excellence of individuals and organizations making a difference.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Document & Information Repository</a></h4>
+              <p>Utilize our extensive document repository to access important information, reports, and documents related to community projects, ensuring you have the resources you need at your fingertips.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Performance Metrics & Analytics</a><br><br></h4>
+              <p>Monitor the impact of your community engagement efforts with our performance metrics and analytics tools,enabling you to measure progress and make data-driven decisions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Global Connections</a></h4>
+              <p>Expand your horizons and connect with like-minded individuals and organizations around the world, fostering international partnerships and collaboration for a broader impact.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-collection-fill"></i></div>
+              <h4><a href="">Community Resources Hub</a></h4>
+              <p>Access a comprehensive collection of resources to support your civic initiatives, providing a wealth of knowledge and tools to empower your community engagement.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Architecting Solutions</a></h4>
+              <p>Collaborate with experts to architect innovative solutions for community challenges, leveraging collective expertise to address complex issues.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>Portfolio</h2>
+          <p>Take a Look At Our Work</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Card-1</li>
+              <li data-filter=".filter-card">Card-2</li>
+              <li data-filter=".filter-web">Card-3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Testimonials</span>
+          <h2>Testimonials</h2>
+          <p>What People Are Saying About Our Community</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "Chipata Citizen Engagement Forum has been a game-changer for our community initiatives. The wealth of resources available helped us streamline our projects, and the awards program not only recognized our efforts but also motivated us to do more. This forum is the heart of positive change!"
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Ronald Mwenya</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "The Chipata Citizen Engagement Forum is invaluable for our organization. The document repository saved us countless hours of research, and the performance metrics tools provided crucial insights. The collaborative solutions we developed with experts through this forum were nothing short of revolutionary."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara W.</h3>
+                <h4>Community Organizer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  "Being part of the Chipata Citizen Engagement Forum has been an inspiring journey. The resources available are unmatched, making information accessible and actionable. The international connections I made expanded my perspective and gave me a broader understanding of community engagement." 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>William M.</h3>
+                <h4>Community Volunteer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center">
+          <h3>Call To Action</h3>
+          <p>Join us today and be the driving force behind positive change in your community. Together, we can make a difference. Get started now!</p>
+          <a class="cta-btn" href="#">Call To Action</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Team</h2>
+          <p>Meet Our Team</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Ronald Mwenya</h4>
+              <span>Founder</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" alt="">
+              <h4>Sarah J.</h4>
+              <span>Community Organizer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" alt="">
+              <h4>William M.</h4>
+              <span>Nonprofit Director</span>
+             
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>Get In Touch With Us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Chipata, Eastern Province, Zambia</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p></p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+260978985267</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15510.801994869573!2d32.62756126137697!3d-13.61509527189062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1918ebc5eaf473a5%3A0x6761f2056d37cf5!2sChipata!5e0!3m2!1sen!2szm!4v1698246032739!5m2!1sen!2szm" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients clients">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://icuzambia.net">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="zoom-in">
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://icuzambia.net">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </a>    
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://icuzambia.net">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://zrdc.org">
+            <img src="assets/img/clients/client-4.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://zrdc.org">
+            <img src="assets/img/clients/client-5.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <a href="http://zrdc.org">
+            <img src="assets/img/clients/client-6.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Chipata Citizen Engagement Forum Newsletter</h3>
+            <p>Stay informed and connected with our newsletter. Get the latest updates on community initiatives, inspiring stories, and opportunities for involvement</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Chipata Consisutuency</span></strong>. All Rights Reserved Designed and Maintained By Mwansa Kalela, SIN: 2311324730
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
+        Designed by <a href="https://icuzambia.net">Mwansa Kalela</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
